@@ -1,0 +1,22 @@
+.hero-section-font {
+    font-family: 'Courgette', cursive;
+}
+
+.line-onside {
+    grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+}
+
+.line-onside:before,
+.line-onside:after {
+    content: '';
+    border-top: 1px solid;
+    border-color: #f59e0b;
+}
+
+.line-onside:before {
+    margin-left: 70%;
+}
+
+.line-onside:after {
+    margin-right: 70%;
+}
