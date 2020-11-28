@@ -2,7 +2,7 @@ Vue.component('navbar', {
     template: /*html*/ `
         <div class="navbar fixed w-screen z-10 bg-gray-800 md:bg-opacity-75 shadow-lg" :class="{ 'navbar--hidden': !showNavbar }">
             <div class="hidden md:block mx-auto py-4">
-                <img class="mx-auto md:w-28 lg:w-38" src="assets/jeit-logo.png" alt="logo de JEIT">
+                <img class="mx-auto md:w-28 md:h-28 lg:w-38 lg:h-38" src="assets/jeit-logo.png" alt="logo de JEIT">
             </div>
             <div class="max-w-7xl mx-auto px-2 sm:px-3">
                 <div class="flex justify-between items-center sm:py-4 py-2 md:justify-start md:space-x-10">
