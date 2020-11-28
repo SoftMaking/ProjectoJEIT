@@ -1,6 +1,6 @@
 Vue.component('navbar', {
     template: /*html*/ `
-        <div class="navbar fixed w-screen z-10 bg-gray-800 bg-opacity-75 shadow-lg" :class="{ 'navbar--hidden': !showNavbar }">
+        <div class="navbar fixed w-screen z-10 bg-gray-800 md:bg-opacity-75 shadow-lg" :class="{ 'navbar--hidden': !showNavbar }">
             <div class="hidden md:block mx-auto py-4">
                 <img class="mx-auto md:w-28 lg:w-38" src="/assets/jeit-logo.png" alt="logo de JEIT">
             </div>
@@ -34,7 +34,7 @@ Vue.component('navbar', {
                     </nav>
                     <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0"></div>
                 </div>
-                <div v-if="isOpen" class="w-full flex flex-col ml-4">
+                <div v-if="isOpen" class="w-full flex flex-col ml-4 menu">
                     <a href="#home" data-scrollspy="#home" class="text-base font-medium text-gray-100 hover:text-gray-300 my-2 active">
                     Inicio
                     </a>
@@ -44,7 +44,7 @@ Vue.component('navbar', {
                     <a href="#contact" data-scrollspy="#contact" class="text-base font-medium text-gray-100 hover:text-gray-300 my-2">
                     Contacto
                     </a>
-                    <a href="#products" data-scrollspy="#products" class="text-base font-medium text-gray-100 hover:text-gray-300 my-2 mb-6">
+                    <a href="#products" data-scrollspy="#products" class="text-base font-medium text-gray-100 hover:text-gray-300 my-2 mb-4">
                     Productos
                     </a>
                 </div>
@@ -59,26 +59,112 @@ Vue.component('navbar', {
         }
     },
     methods: {
-        onScroll () {
+        onScroll() {
             const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
             if (currentScrollPosition < 0) {
-              return
+                return
             }
             // Stop executing this function if the difference between
             // current scroll position and last scroll position is less than some offset
-            if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 50) {
-              return
+            if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 40) {
+                if (this.isOpen) this.isOpen = !this.isOpen
+                return
             }
             this.showNavbar = currentScrollPosition < this.lastScrollPosition
             this.lastScrollPosition = currentScrollPosition
         }
     },
-    mounted () {
+    mounted() {
         window.addEventListener('scroll', this.onScroll)
     },
-    beforeDestroy () {
+    beforeDestroy() {
         window.removeEventListener('scroll', this.onScroll)
     }
+});
+
+Vue.component('slider-section', {
+    template: /*html*/ `
+    <div class="img-slider w-screen h-screen">
+        <div class="slide absolute top-0 w-full h-full bg-center bg-cover actived"
+            style="background-image:url('/assets/bg-2.jpg')">
+            <span class="w-full h-full absolute opacity-50 bg-black"></span>
+            <div class="info flex h-screen justify-center items-center text-center text-white">
+                <h1 class="font-semibold text-5xl">Condimentos JEIT</h1>
+                <h2 class="my-5 text-3xl font-regular capitalize">Envasamos lo mejor para usted</h2>
+                <p class="mb-5 text-lg font-light">Tenemos a disposición mas de 100 productos.</p>
+            </div>
+        </div>
+        <div class="slide absolute top-0 w-full h-full bg-center bg-cover"
+            style="background-image:url('/assets/banners/alinos_y_especias.jpg')">
+            <span class="w-full h-full absolute opacity-50 bg-black"></span>
+            <div class="info flex h-screen justify-center items-center text-center text-white">
+                <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Aliños y especias</h2>
+                <p class="mb-5 text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloremque quod ipsum pariatur doloribus atque cum quis mollitia nisi ad modi maxime, distinctio
+                    id ab, dignissimos ullam? Maxime beatae aspernatur repudiandae.</p>
+            </div>
+        </div>
+        <div class="slide absolute top-0 w-full h-full bg-center bg-cover"
+            style="background-image:url('/assets/banners/decoracion_torta.jpg')">
+            <span class="w-full h-full absolute opacity-50 bg-black"></span>
+            <div class="info flex h-screen justify-center items-center text-center text-white">
+                <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Decoración torta</h2>
+                <p class="mb-5 text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloremque quod ipsum pariatur doloribus atque cum quis mollitia nisi ad modi maxime, distinctio
+                    id ab, dignissimos ullam? Maxime beatae aspernatur repudiandae.</p>
+            </div>
+        </div>
+        <div class="slide absolute top-0 w-full h-full bg-center bg-cover"
+            style="background-image:url('/assets/banners/frutossecos_y_manies.jpg')">
+            <span class="w-full h-full absolute opacity-50 bg-black"></span>
+            <div class="info flex h-screen justify-center items-center text-center text-white">
+                <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Frutos secos y manies</h2>
+                <p class="mb-5 text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloremque quod ipsum pariatur doloribus atque cum quis mollitia nisi ad modi maxime, distinctio
+                    id ab, dignissimos ullam? Maxime beatae aspernatur repudiandae.</p>
+            </div>
+        </div>
+        <div class="slide absolute top-0 w-full h-full bg-center bg-cover"
+            style="background-image:url('/assets/banners/grupo_encurtidos.jpg')">
+            <span class="w-full h-full absolute opacity-50 bg-black"></span>
+            <div class="info flex h-screen justify-center items-center text-center text-white">
+                <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Grupo encurtidos</h2>
+                <p class="mb-5 text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloremque quod ipsum pariatur doloribus atque cum quis mollitia nisi ad modi maxime, distinctio
+                    id ab, dignissimos ullam? Maxime beatae aspernatur repudiandae.</p>
+            </div>
+        </div>
+        <div class="slide absolute top-0 w-full h-full bg-center bg-cover"
+            style="background-image:url('/assets/banners/linea_tostaduria.jpg')">
+            <span class="w-full h-full absolute opacity-50 bg-black"></span>
+            <div class="info flex h-screen justify-center items-center text-center text-white">
+                <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Línea tostaduría</h2>
+                <p class="mb-5 text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloremque quod ipsum pariatur doloribus atque cum quis mollitia nisi ad modi maxime, distinctio
+                    id ab, dignissimos ullam? Maxime beatae aspernatur repudiandae.</p>
+            </div>
+        </div>
+        <div class="slide absolute top-0 w-full h-full bg-center bg-cover"
+            style="background-image:url('/assets/banners/grupo_fiesta.jpg')">
+            <span class="w-full h-full absolute opacity-50 bg-black"></span>
+            <div class="info flex h-screen justify-center items-center text-center text-white">
+                <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Grupo fiesta</h2>
+                <p class="mb-5 text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloremque quod ipsum pariatur doloribus atque cum quis mollitia nisi ad modi maxime, distinctio
+                    id ab, dignissimos ullam? Maxime beatae aspernatur repudiandae.</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="btn actived"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+        </div>
+    </div>
+    `,
 });
 
 Vue.component('hero-section', {
@@ -212,7 +298,6 @@ Vue.component('contact-section', {
     `
 });
 
-
 Vue.component('products-section', {
     template: /*html*/ `
         <div id="products" class="mx-auto bg-gray-50 py-12 scrollspy">
@@ -327,8 +412,6 @@ Vue.component('footer-section', {
         </footer>
     `,
 });
-
-
 
 Vue.component('products', {
     template: /*html*/ `
