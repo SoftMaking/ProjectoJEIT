@@ -246,8 +246,8 @@ Vue.component('contact-section', {
                                     d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z">
                                 </path>
                             </svg>&nbsp;Número de contacto</h4>
-                        <p class="mx-3 my-1"><a href="tel:+56954188233" class="font-light">+56 9 5418
-                                8233</a></p>
+                        <p class="mx-3 my-1"><a href="tel:+56966940056" class="font-light">+56 9 6694
+                                0056</a></p>
                     </li>
                     <li class="mb-6">
                         <h4 class="font-medium text-lg my-3 text-light flex items-center"><svg width="20" height="18"
@@ -258,8 +258,8 @@ Vue.component('contact-section', {
                                     d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
                                 </path>
                             </svg>&nbsp;Correo electrónico</h4>
-                        <p class="mx-3 my-1"><a href="mailto:contact@domain.com"
-                                class="font-light">contact@domain.com</a></p>
+                        <p class="mx-3 my-1"><a href="mailto:jeit1733@hotmail.com"
+                                class="font-light">jeit1733@hotmail.com</a></p>
                     </li>
                     <li class="mb-6">
                         <h4 class="font-medium text-lg my-3 text-light flex items-center"><svg width="20" height="20"
@@ -290,7 +290,7 @@ Vue.component('contact-section', {
             <div class="mx-auto mapouter mb-3 mx-4">
                 <div class="gmap_canvas px-4"><iframe class="rounded w-11/12 mx-auto" loading="lazy" width="900"
                     height="400" id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=barros%20jarpa%20124&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    src="https://maps.google.com/maps?q=22%20norte%201733&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
                     href="https://www.embedgooglemap.net"></a></div>
             </div>
