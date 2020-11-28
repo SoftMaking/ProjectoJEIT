@@ -2,12 +2,12 @@ Vue.component('navbar', {
     template: /*html*/ `
         <div class="navbar fixed w-screen z-10 bg-gray-800 md:bg-opacity-75 shadow-lg" :class="{ 'navbar--hidden': !showNavbar }">
             <div class="hidden md:block mx-auto py-4">
-                <img class="mx-auto md:w-28 lg:w-38" src="/assets/jeit-logo.png" alt="logo de JEIT">
+                <img class="mx-auto md:w-28 lg:w-38" src="assets/jeit-logo.png" alt="logo de JEIT">
             </div>
             <div class="max-w-7xl mx-auto px-2 sm:px-3">
                 <div class="flex justify-between items-center sm:py-4 py-2 md:justify-start md:space-x-10">
                     <div class="flex justify-start md:w-0 md:flex-1 bg-fixed ml-4">
-                        <img class="md:hidden mx-auto w-20" src="/assets/jeit-logo-min.png" alt="logo de JEIT">
+                        <img class="md:hidden mx-auto w-20" src="assets/jeit-logo-min.png" alt="logo de JEIT">
                     </div>
                     <div class="md:hidden">
                         <button @click="isOpen = !isOpen" type="button" class="mr-4 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-yellow-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-300">
@@ -84,9 +84,9 @@ Vue.component('navbar', {
 
 Vue.component('slider-section', {
     template: /*html*/ `
-    <div class="img-slider w-screen h-screen">
+    <div id="home" class="img-slider w-screen h-screen">
         <div class="slide absolute top-0 w-full h-full bg-center bg-cover actived"
-            style="background-image:url('/assets/bg-2.jpg')">
+            style="background-image:url('assets/bg-2.jpg')">
             <span class="w-full h-full absolute opacity-50 bg-black"></span>
             <div class="info flex h-screen justify-center items-center text-center text-white">
                 <h1 class="font-semibold text-5xl">Condimentos JEIT</h1>
@@ -95,7 +95,7 @@ Vue.component('slider-section', {
             </div>
         </div>
         <div class="slide absolute top-0 w-full h-full bg-center bg-cover"
-            style="background-image:url('/assets/banners/alinos_y_especias.jpg')">
+            style="background-image:url('assets/banners/alinos_y_especias.jpg')">
             <span class="w-full h-full absolute opacity-50 bg-black"></span>
             <div class="info flex h-screen justify-center items-center text-center text-white">
                 <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Aliños y especias</h2>
@@ -105,7 +105,7 @@ Vue.component('slider-section', {
             </div>
         </div>
         <div class="slide absolute top-0 w-full h-full bg-center bg-cover"
-            style="background-image:url('/assets/banners/decoracion_torta.jpg')">
+            style="background-image:url('assets/banners/decoracion_torta.jpg')">
             <span class="w-full h-full absolute opacity-50 bg-black"></span>
             <div class="info flex h-screen justify-center items-center text-center text-white">
                 <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Decoración torta</h2>
@@ -115,7 +115,7 @@ Vue.component('slider-section', {
             </div>
         </div>
         <div class="slide absolute top-0 w-full h-full bg-center bg-cover"
-            style="background-image:url('/assets/banners/frutossecos_y_manies.jpg')">
+            style="background-image:url('assets/banners/frutossecos_y_manies.jpg')">
             <span class="w-full h-full absolute opacity-50 bg-black"></span>
             <div class="info flex h-screen justify-center items-center text-center text-white">
                 <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Frutos secos y manies</h2>
@@ -125,7 +125,7 @@ Vue.component('slider-section', {
             </div>
         </div>
         <div class="slide absolute top-0 w-full h-full bg-center bg-cover"
-            style="background-image:url('/assets/banners/grupo_encurtidos.jpg')">
+            style="background-image:url('assets/banners/grupo_encurtidos.jpg')">
             <span class="w-full h-full absolute opacity-50 bg-black"></span>
             <div class="info flex h-screen justify-center items-center text-center text-white">
                 <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Grupo encurtidos</h2>
@@ -135,7 +135,7 @@ Vue.component('slider-section', {
             </div>
         </div>
         <div class="slide absolute top-0 w-full h-full bg-center bg-cover"
-            style="background-image:url('/assets/banners/linea_tostaduria.jpg')">
+            style="background-image:url('assets/banners/linea_tostaduria.jpg')">
             <span class="w-full h-full absolute opacity-50 bg-black"></span>
             <div class="info flex h-screen justify-center items-center text-center text-white">
                 <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Línea tostaduría</h2>
@@ -145,7 +145,7 @@ Vue.component('slider-section', {
             </div>
         </div>
         <div class="slide absolute top-0 w-full h-full bg-center bg-cover"
-            style="background-image:url('/assets/banners/grupo_fiesta.jpg')">
+            style="background-image:url('assets/banners/grupo_fiesta.jpg')">
             <span class="w-full h-full absolute opacity-50 bg-black"></span>
             <div class="info flex h-screen justify-center items-center text-center text-white">
                 <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Grupo fiesta</h2>
@@ -171,7 +171,7 @@ Vue.component('hero-section', {
     template: /*html*/ `
         <div id="home" class="h-screen w-screen relative pt-16 pb-32 flex content-center items-center justify-center scrollspy">
             <div class="absolute top-0 w-full h-full bg-center bg-cover"
-                style="background-image:url('/assets/bg-2.jpg')">
+                style="background-image:url('assets/bg-2.jpg')">
                 <span class="w-full h-full absolute opacity-75 bg-black"></span></div>
             <div class="container relative mx-auto">
                 <div class="items-center flex flex-wrap">
@@ -208,7 +208,7 @@ Vue.component('about-section', {
             <h1 class="font-medium text-3xl md:text-5xl text-gray-700 text-center pb-8">¿Quiénes Somos?</h1>
             <div class="relative">
                 <div class="line-onside grid items-center text-center gap-4 w-screen pb-8">
-                    <img class="mx-auto w-20" src="/assets/jeit-logo-min.png" alt="logo de JEIT">
+                    <img class="mx-auto w-20" src="assets/jeit-logo-min.png" alt="logo de JEIT">
                 </div>
             </div>
             <div class="container mx-auto px-8 md:px-24">
@@ -228,7 +228,7 @@ Vue.component('contact-section', {
             <h1 class="font-medium text-3xl md:text-5xl text-center pb-8">Contacto</h1>
             <div class="relative">
                 <div class="line-onside grid items-center text-center gap-4 w-screen pb-8">
-                    <img class="mx-auto w-20" src="/assets/jeit-logo-min.png" alt="logo de JEIT">
+                    <img class="mx-auto w-20" src="assets/jeit-logo-min.png" alt="logo de JEIT">
                 </div>
             </div>
             <div class="container mx-auto px-8 md:px-24">
@@ -304,7 +304,7 @@ Vue.component('products-section', {
             <h1 class="font-medium text-3xl md:text-5xl text-gray-700 text-center pb-8">Productos</h1>
             <div class="relative">
                 <div class="line-onside grid items-center text-center gap-4 w-screen pb-8">
-                    <img class="mx-auto w-20" src="/assets/jeit-logo-min.png" alt="logo de JEIT">
+                    <img class="mx-auto w-20" src="assets/jeit-logo-min.png" alt="logo de JEIT">
                 </div>
             </div>
             <div class="container mx-auto px-8 md:px-24">
@@ -406,6 +406,27 @@ Vue.component('footer-section', {
     template: /*html*/ `
         <footer>
             <div class="bg-gray-800 text-center text-gray-100 py-4">
+                <div class="container mx-auto flex md:flew-col mb-4">
+                    <div class="flex items-center flex-col md:flex-row w-3/5">
+                        <div class="mb-3">
+                            <img class="mx-auto w-16 my-2" src="assets/jeit-logo.png" alt="logo de JEIT">
+                            <h3>Condimentos JEIT</h3>
+                        </div>
+                        <div class="ml-3 text-justify">
+                            <p class="font-regular text-sm">Envasamos lo mejor para usted. Tenemos a disposición mas de 100 productos con diferentes categorías, así que ven a comprar a nuestro negocio que se encuentra en 22 Nte. 1733.</p>
+                        </div>
+                    </div>
+                    <div class="w-2/5 m-auto">
+                        <h3 class="mb-3">Enlaces útiles</h3>
+                        <ul>
+                            <li class="font-regular text-sm mb-2"><a href="#home" data-scrollspy="#home" class="text-gray-100 hover:text-gray-300">Inicio</a></li>
+                            <li class="font-regular text-sm mb-2"><a href="#about-us" data-scrollspy="#about-us" class="text-gray-100 hover:text-gray-300">Quiénes Somos</a></li>
+                            <li class="font-regular text-sm mb-2"><a href="#contact" data-scrollspy="#contact" class="text-gray-100 hover:text-gray-300">Contacto</a></li>
+                            <li class="font-regular text-sm mb-2"><a href="#products" data-scrollspy="#products" class="text-gray-100 hover:text-gray-300">Productos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="border-gray-700 mx-4 pt-4">
                 <p class="font-regular">Desarrollado por <strong><a class="no-underline hover:text-gray-300"
                             href="https://www.softmaking.cl/">SOFTMAKING</a></strong> © 2020</p>
             </div>
@@ -419,7 +440,7 @@ Vue.component('products', {
             <h1 class="text-4xl text-yellow-500 font-light tracking-wide text-center py-4">{{ title }}</h1>
             <div class="relative">
                 <div class="line-onside grid items-center text-center gap-4 w-screen">
-                    <img class="mx-auto w-16" src="/assets/jeit-logo-min.png" alt="logo de JEIT">
+                    <img class="mx-auto w-16" src="assets/jeit-logo-min.png" alt="logo de JEIT">
                 </div>
             </div>
             <div class="px-6 mx-2 flex md:grid grid-cols-1 md:grid-cols-6 gap-4 overflow-auto overflow-x-scroll md:overflow-x-hidden">
