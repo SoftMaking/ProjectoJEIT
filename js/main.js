@@ -2,12 +2,12 @@ Vue.component('navbar', {
     template: /*html*/ `
         <div class="navbar fixed w-screen z-10 bg-gray-800 md:bg-opacity-75 shadow-lg" :class="{ 'navbar--hidden': !showNavbar }">
             <div class="hidden md:block mx-auto py-4">
-                <img class="mx-auto md:w-28 md:h-28 lg:w-38 lg:h-38" src="assets/jeit-logo.png" alt="logo de JEIT">
+                <img class="mx-auto md:w-28 lg:w-38 h-auto" src="assets/jeit-logo.png" alt="logo de JEIT">
             </div>
             <div class="max-w-7xl mx-auto px-2 sm:px-3">
                 <div class="flex justify-between items-center sm:py-4 py-2 md:justify-start md:space-x-10">
                     <div class="flex justify-start md:w-0 md:flex-1 bg-fixed ml-4">
-                        <img class="md:hidden mx-auto w-20" src="assets/jeit-logo-min.png" alt="logo de JEIT">
+                        <img class="md:hidden mx-auto w-20 h-auto" src="assets/jeit-logo-min.png" alt="logo de JEIT">
                     </div>
                     <div class="md:hidden">
                         <button @click="isOpen = !isOpen" type="button" class="mr-4 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-yellow-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-300">
@@ -337,7 +337,7 @@ Vue.component('products-section', {
                         <p class="text-lg font-semibold capitalize text-white">Decoración torta</p>
                         </div>
                     </div>
-                    <img class="rounded-md md:rounded-none" src="assets/banners/decoracion_torta.jpg" alt="grupo decoración torta">
+                    <img class="rounded-md md:rounded-none h-auto" src="assets/banners/decoracion_torta.jpg" alt="grupo decoración torta">
                 </div>
                 <div class="md:col-span-2 md:row-span-1 relative flex">
                     <div class="absolute flex h-full w-full">
@@ -345,7 +345,7 @@ Vue.component('products-section', {
                         <p class="text-lg font-semibold capitalize text-white">Grupo encurtidos</p>
                         </div>
                     </div>
-                    <img class="rounded-md md:rounded-none" src="assets/banners/grupo_encurtidos.jpg" alt="grupo de encurtidos">
+                    <img class="rounded-md md:rounded-none h-auto" src="assets/banners/grupo_encurtidos.jpg" alt="grupo de encurtidos">
                 </div>
                 <div class="md:row-span-2 relative flex">
                     <div class="absolute flex h-full w-full">
@@ -353,7 +353,7 @@ Vue.component('products-section', {
                         <p class="text-lg font-semibold capitalize text-white">Grupo fiesta</p>
                         </div>
                     </div>
-                    <img class="rounded-md md:rounded-none" src="assets/banners/grupo_fiesta.jpg" alt="grupo fiesta">
+                    <img class="rounded-md md:rounded-none h-auto" src="assets/banners/grupo_fiesta.jpg" alt="grupo fiesta">
                 </div>
                 <div class="md:row-span-1 relative flex">
                     <div class="absolute flex h-full w-full">
@@ -361,7 +361,7 @@ Vue.component('products-section', {
                         <p class="text-lg font-semibold capitalize text-white">Línea tostaduría</p>
                         </div>
                     </div>
-                    <img class="rounded-md md:rounded-none" src="assets/banners/linea_tostaduria.jpg" alt="grupo de linea tostaduría">
+                    <img class="rounded-md md:rounded-none h-auto" src="assets/banners/linea_tostaduria.jpg" alt="grupo de linea tostaduría">
                 </div>
                 <div class="md:col-span-2 relative flex">
                     <div class="absolute flex h-full w-full">
@@ -369,7 +369,7 @@ Vue.component('products-section', {
                         <p class="text-lg font-semibold capitalize text-white">Frutos secos y maníes</p>
                         </div>
                     </div>
-                    <img class="rounded-md md:rounded-none" src="assets/banners/frutossecos_y_manies.jpg" alt="grupo de frutos secos">
+                    <img class="rounded-md md:rounded-none h-auto" src="assets/banners/frutossecos_y_manies.jpg" alt="grupo de frutos secos">
                 </div>
                 <div class="md:row-span-1 relative flex">
                     <div class="absolute flex h-full w-full">
@@ -377,7 +377,7 @@ Vue.component('products-section', {
                         <p class="text-lg font-semibold capitalize text-white">Aliños y especias</p>
                         </div>
                     </div>
-                    <img class="rounded-md md:rounded-none" src="assets/banners/alinos_y_especias.jpg" alt="grupo de aliños y especias">
+                    <img class="rounded-md md:rounded-none h-auto" src="assets/banners/alinos_y_especias.jpg" alt="grupo de aliños y especias">
                 </div>
             </div>
 
