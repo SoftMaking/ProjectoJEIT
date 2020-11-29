@@ -6,7 +6,7 @@ Vue.component('navbar', {
             </div>
             <div class="max-w-7xl mx-auto px-2 sm:px-3">
                 <div class="flex justify-between items-center sm:py-4 py-2 md:justify-start md:space-x-10">
-                    <div class="flex justify-start md:w-0 md:flex-1 bg-fixed ml-4">
+                    <div class="justify-start md:w-0 md:flex-1 bg-fixed ml-4">
                         <img class="md:hidden mx-auto w-20 h-auto" src="assets/jeit-logo-min.png" alt="logo de JEIT">
                     </div>
                     <div class="md:hidden">
