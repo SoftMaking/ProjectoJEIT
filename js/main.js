@@ -99,9 +99,9 @@ Vue.component('slider-section', {
             <span class="w-full h-full absolute opacity-50 bg-black"></span>
             <div class="info flex h-screen justify-center items-center text-center text-white">
                 <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Aliños y especias</h2>
-                <p class="mb-5 text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloremque quod ipsum pariatur doloribus atque cum quis mollitia nisi ad modi maxime, distinctio
-                    id ab, dignissimos ullam? Maxime beatae aspernatur repudiandae.</p>
+                <p class="mb-5 text-lg font-light">Trabajamos gran variedad de aliños y especias para que 
+                pueda utilizar en cada una de sus preparaciones e incluso nuevos sabores para que pueda 
+                experimentar en cada comida.</p>
             </div>
         </div>
         <div class="slide absolute top-0 w-full h-full bg-center bg-cover"
@@ -109,9 +109,9 @@ Vue.component('slider-section', {
             <span class="w-full h-full absolute opacity-50 bg-black"></span>
             <div class="info flex h-screen justify-center items-center text-center text-white">
                 <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Decoración torta</h2>
-                <p class="mb-5 text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloremque quod ipsum pariatur doloribus atque cum quis mollitia nisi ad modi maxime, distinctio
-                    id ab, dignissimos ullam? Maxime beatae aspernatur repudiandae.</p>
+                <p class="mb-5 text-lg font-light">Con nuestros productos de repostería podrás preparar deliciosas tortas, 
+                postres y bizcochos. Su excelente calidad les permite ser un gran aporte para el sabor y presentación de 
+                diversas recetas.</p>
             </div>
         </div>
         <div class="slide absolute top-0 w-full h-full bg-center bg-cover"
@@ -119,9 +119,10 @@ Vue.component('slider-section', {
             <span class="w-full h-full absolute opacity-50 bg-black"></span>
             <div class="info flex h-screen justify-center items-center text-center text-white">
                 <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Frutos secos y manies</h2>
-                <p class="mb-5 text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloremque quod ipsum pariatur doloribus atque cum quis mollitia nisi ad modi maxime, distinctio
-                    id ab, dignissimos ullam? Maxime beatae aspernatur repudiandae.</p>
+                <p class="mb-5 text-lg font-light">Los Frutos Secos pueden degustarse solos o como acompañamiento 
+                en diferentes preparaciones. Sus sabores y texturas permiten generar diferentes sensaciones en un 
+                mismo plato, además de otorgar beneficios para la salud, convirtiéndolos en un ingrediente fundamental 
+                en la alimentación balanceada.</p>
             </div>
         </div>
         <div class="slide absolute top-0 w-full h-full bg-center bg-cover"
@@ -129,9 +130,10 @@ Vue.component('slider-section', {
             <span class="w-full h-full absolute opacity-50 bg-black"></span>
             <div class="info flex h-screen justify-center items-center text-center text-white">
                 <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Grupo encurtidos</h2>
-                <p class="mb-5 text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloremque quod ipsum pariatur doloribus atque cum quis mollitia nisi ad modi maxime, distinctio
-                    id ab, dignissimos ullam? Maxime beatae aspernatur repudiandae.</p>
+                <p class="mb-5 text-lg font-light">Los encurtidos son un producto clásico en todas las 
+                mesas vegetales, otorgando un sabor característico utilizado en la gastronomía de muchos 
+                países, entre los que se encuentra Chile obviamente. En esta página podrás cotizar todos 
+                los encurtidos que tenemos a su disposición.</p>
             </div>
         </div>
         <div class="slide absolute top-0 w-full h-full bg-center bg-cover"
@@ -139,9 +141,8 @@ Vue.component('slider-section', {
             <span class="w-full h-full absolute opacity-50 bg-black"></span>
             <div class="info flex h-screen justify-center items-center text-center text-white">
                 <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Línea tostaduría</h2>
-                <p class="mb-5 text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloremque quod ipsum pariatur doloribus atque cum quis mollitia nisi ad modi maxime, distinctio
-                    id ab, dignissimos ullam? Maxime beatae aspernatur repudiandae.</p>
+                <p class="mb-5 text-lg font-light">Trabajamos los mejores productos tostados, confitadas, semillas y 
+                granos para llevarlos a su mesa.</p>
             </div>
         </div>
         <div class="slide absolute top-0 w-full h-full bg-center bg-cover"
@@ -149,9 +150,7 @@ Vue.component('slider-section', {
             <span class="w-full h-full absolute opacity-50 bg-black"></span>
             <div class="info flex h-screen justify-center items-center text-center text-white">
                 <h2 class="my-5 text-3xl md:text-5xl font-regular capitalize">Grupo fiesta</h2>
-                <p class="mb-5 text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloremque quod ipsum pariatur doloribus atque cum quis mollitia nisi ad modi maxime, distinctio
-                    id ab, dignissimos ullam? Maxime beatae aspernatur repudiandae.</p>
+                <p class="mb-5 text-lg font-light">Tenemos todo lo que necesita para hacer su celebración más entretenida.</p>
             </div>
         </div>
         <div class="navigation">
@@ -212,11 +211,9 @@ Vue.component('about-section', {
                 </div>
             </div>
             <div class="container mx-auto px-8 md:px-24">
-                <p class="font-medium text-md text-justify md:text-center md:text-lg text-gray-800">Lorem ipsum dolor,
-                    sit amet
-                    consectetur adipisicing elit. Itaque labore obcaecati omnis debitis distinctio autem, laboriosam
-                    voluptate! Accusamus laudantium minus quibusdam sint tenetur reprehenderit enim, sit, quos minima
-                    facere totam?</p>
+                <p class="font-medium text-md text-justify md:text-center md:text-lg text-gray-800">Condimentos JEIT es una empresa familiar, 
+                formada por Juan Tapia Lepe, con mas de 15 años en el comercio. Nos dedicamos a envasar productos de primera calidad y 
+                atendido por sus propios dueños.</p>
             </div>
         </div>
     `,
@@ -232,10 +229,8 @@ Vue.component('contact-section', {
                 </div>
             </div>
             <div class="container mx-auto px-8 md:px-24">
-                <p class="font-medium text-md text-justify md:text-center md:text-lg mb-8">Lorem ipsum dolor, sit amet
-                    consectetur adipisicing elit. Itaque labore obcaecati omnis debitis distinctio autem, laboriosam
-                    voluptate! Accusamus laudantium minus quibusdam sint tenetur reprehenderit enim, sit, quos minima
-                    facere totam?</p>
+                <p class="font-medium text-md text-justify md:text-center md:text-lg mb-8">Para cotizaciones por 
+                mayor, dudas y Consulta, puede encontrarnos en:</p>
                 <ul class="text-left list-none">
                     <li class="mb-6">
                         <h4 class="font-medium text-lg my-3 text-light flex items-center"><svg width="20" height="18"
@@ -270,7 +265,7 @@ Vue.component('contact-section', {
                                     d="M496 224c-79.6 0-144 64.4-144 144s64.4 144 144 144 144-64.4 144-144-64.4-144-144-144zm64 150.3c0 5.3-4.4 9.7-9.7 9.7h-60.6c-5.3 0-9.7-4.4-9.7-9.7v-76.6c0-5.3 4.4-9.7 9.7-9.7h12.6c5.3 0 9.7 4.4 9.7 9.7V352h38.3c5.3 0 9.7 4.4 9.7 9.7v12.6zM320 368c0-27.8 6.7-54.1 18.2-77.5-8-1.5-16.2-2.5-24.6-2.5h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h347.1c-45.3-31.9-75.1-84.5-75.1-144zm-96-112c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128z">
                                 </path>
                             </svg>&nbsp;Horario de atención</h4>
-                        <p class="mx-3 font-light">Las 24 horas, 7 días a la semana, domingos y festivos.</p>
+                        <p class="mx-3 font-light">Atendemos de lunes a sábados desde las 9 a 17 horas.</p>
                     </li>
                     <li class="mb-6">
                         <h4 class="font-medium text-lg my-3 text-light flex items-center"><svg width="18" height="20"
