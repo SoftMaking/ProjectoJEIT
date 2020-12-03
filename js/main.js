@@ -276,7 +276,7 @@ Vue.component('contact-section', {
                                     d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
                                 </path>
                             </svg>&nbsp;Ubicación</h4>
-                        <p class="mx-3 font-light">Lugar de ubicación</p>
+                        <p class="mx-3 font-light">22 Norte 1733, Viña del Mar</p>
                     </li>
 
                     
@@ -408,7 +408,7 @@ Vue.component('footer-section', {
                             <h3>Condimentos JEIT</h3>
                         </div>
                         <div class="ml-3 text-justify">
-                            <p class="font-regular text-sm">Envasamos lo mejor para usted. Tenemos a disposición mas de 100 productos con diferentes categorías, así que ven a comprar a nuestro negocio que se encuentra en 22 Nte. 1733.</p>
+                            <p class="font-regular text-sm">Envasamos lo mejor para usted. Tenemos a disposición mas de 100 productos con diferentes categorías, así que ven a comprar a nuestro negocio que se encuentra en 22 Norte 1733, Viña del Mar.</p>
                         </div>
                     </div>
                     <div class="w-2/5 m-auto">
