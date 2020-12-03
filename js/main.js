@@ -230,7 +230,7 @@ Vue.component('contact-section', {
             </div>
             <div class="container mx-auto px-8 md:px-24">
                 <p class="font-medium text-md text-justify md:text-center md:text-lg mb-8">Para cotizaciones por 
-                mayor, dudas y Consulta, puede encontrarnos en:</p>
+                mayor, dudas y consultas, puede encontrarnos en:</p>
                 <ul class="text-left list-none">
                     <li class="mb-6">
                         <h4 class="font-medium text-lg my-3 text-light flex items-center"><svg width="20" height="18"
